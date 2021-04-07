@@ -1,0 +1,45 @@
+a{
+	text-decoration:none;
+	color: rgb(29,14,29);
+	font-family:"Times New Roman",Times, Serif;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.bordo
+{
+	padding-right: 13%;
+}
+div
+{
+	border:solid gray 2px;
+	height: 35px;
+}
+.nota
+{
+	height:30px;
+	width:25px;
+	padding-left: 7%;
+}
+.nota2
+{
+	height:30px;
+	width:25px;
+	padding-left: 10%;
+}
+h1
+{
+	margin-top:50px;
+	font-size: 40px;
+	color: white;
+	text-align:center;
+}
+
+.nero
+{
+	background-color:black;
+}
+body
+{
+	background-image:url("");
+	background-repeat:no-repeat;
+}

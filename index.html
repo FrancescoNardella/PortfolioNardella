@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('images/me2.jpeg');
+  min-height: 100%;
+}
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Francesco Nardella</b></h1>
+    <p>Programmer and Systems engineer.</p>
+    <img src="images/me2.jpeg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="images/me2.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">This is my Portfolio </h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+
+      </div>
+
+      <div class="w3-half">
+
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About me</h2>
+    <hr class="w3-opacity">
+    <p>Hi and welcome to my portfolio. My name is Francesco Pio Nardella, a programmer and system engineer who is passionate about simple & clean design. I studied IT during High School from 2015 to 2021.
+I have many hobbies beyond my main passion: photography and physical activity. I love taking pictures of landscapes or just my friends, it makes me feel free. Taking care of yourself is the base, in showing people that you have the desire and dedication in the goals you need to achieve.
+It's gorgeous to deal new challenges, because I am a broad-minded person. I love to communicate with new people, it helps me to impove myself in communication skills and also in relationships. I'm stubborn and I need to reach my goal even in small steps, the important thing is to achieve it.
+    </p>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">C++</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">HTML-CSS</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">JAVASCRIPT</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:73%">73%</div>
+    </div>
+    <p class="w3-wide">PHP/MYSQL</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:90%">87%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">83%</span><br>
+        English language knowledge
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100%</span><br>
+        Team working
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">90%</span><br>
+        Productivity
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">95%</span><br>
+        Improve quickly
+      </div>
+    </div>
+
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24">My Reputation</h3>
+    <img src="images/prof.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Giulio Angiani.</span>IT teacher at Blaise Pascal.</p>
+    <p>Francesco Nardella is a smart guy, with an open mind to changes!</p><br>
+
+    <img src="images/download.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Barbara Cattani.</span>IT teacher at Blaise Pascal.</p>
+    <p>When he get a goal, he always achieves it at his best!</p><br>
+
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16">My Works</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <a href="TIWI.html"><li class="w3-padding-16">TIWI</li></a><hr>
+          <a href="UNICODE.html"><li class="w3-padding-16">UNICODE</li></a><hr>
+          <a href="MONTA.html"><li class="w3-padding-16">ASSEMBLE AND DISMOUNT</li></a><hr>
+          <a href="ENERGYWAY.html"><li class="w3-padding-16">ENERGY WAY</li></a><hr>
+          <a href="CNA.html"><li class="w3-padding-16">CNA</li></a><hr>
+          <a href="SICUREZZA.html"><li class="w3-padding-16">SAFETY</li></a><hr>
+          <a href="ORIENTAMENTO.html"><li class="w3-padding-16">UNIVERSITY ORIENTATION</li></a>
+          <li class="w3-light-grey w3-padding-24">
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-center w3-card w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Pro</li>
+          <a href="WEB.html"><li class="w3-padding-16">WEB RANKING</li></a><hr>
+          <a href="ERREVI.html"><li class="w3-padding-16">ERREVI SYSTEM</li></a><hr>
+          <a href="DAVINCI.html"><li class="w3-padding-16">DA VINCI PROJECT</li></a>
+            <li class="w3-light-grey w3-padding-24">
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Reggio Emilia, IT</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +39 3246211248</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: nardellafrancescopio18@gmail.com</p>
+    </div>
+
+    <!-- Image of location/map -->
+  <div class="mapouter"><div class="gmap_canvas"><iframe width="840" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=via%20agostino%20cagnoli%204&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://youtube-embed-code.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:840px;}</style><a href="https://www.embedgooglemap.net">embed google maps iframe</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:840px;}</style></div></div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+    <p>Lets get in touch. Send me a message:</p>
+    <form action="contatto.php" method="post" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button name="invia" class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a href="https://www.instagram.com/fra__nardella/?hl=it"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="snapchat.html"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://www.pinterest.it/suprerfrancy/_saved/"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/suprerfrancy"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/francesco-8734a3179/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <p class="w3-medium">Powered by Nardella Francesco</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

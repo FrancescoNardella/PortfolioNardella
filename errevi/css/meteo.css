@@ -1,0 +1,57 @@
+body
+{
+	color:grey;
+	font-family: dejavu sans;
+	margin-left: 0px;
+	margin-right: 0px;
+	background-image: url("meteo2.gif");
+}
+div
+{
+
+	margin-top:20px;
+
+}
+input
+{
+	border-radius: 10px;
+}
+
+p
+{
+	font-weight: bold;
+}
+
+hr
+{
+	width:200px;
+
+}
+.border
+{
+	border:solid black 2px;
+}
+h1
+{
+	font-weight:bold;
+}
+
+.tabella2{
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+}
+
+.bottone
+{
+	width:35%;
+	padding:5px;
+
+}
+.testo
+{
+	font-size: 25px;
+}
+.spazio{
+	margin: 20px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web meteo</title>
+<link rel="stylesheet" type="text/css" href="css/meteo.css">
+<script type="text/javascript" src="jss/IndexCode.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<style>
+th#vuota{border: 0pt solid black; background-color: rgb(128, 212, 255)}
+textarea{height: 200px; width: 90%; font-size: 32px; text-align: center; overflow: hidden}
+</style>
+</head>
+<body>
+<center><h1>Previsone Meteo</h1></center>
+
+
+<div>
+			<center>
+		<div>
+		<p>
+			Inserisci la citt&agrave;:
+		</p>
+		<input type="text" name="Nome" id="city" value="">
+		<button type="submit" name="button" onclick="jsonCall()">cerca</button>
+		</div>
+		<b>
+		</b>
+		<hr>
+		<p>
+			Inserisci l'unit&agrave; di misura:
+		</p>
+
+		<select name="siti" id="misura">
+			<option value="metric" selected="selected">Metric</option>
+			<option value="imperial">Imperial</option>
+		</select>
+
+
+
+			<center>
+			<hr>
+			<div>
+			<h2> Nazione, Latitudine, Longitudine </h2>
+			<input type="text" name="Na" placeholder="Nazione"  id="Nazione" value="">
+			<input type="text" name="La" placeholder="Latitudine" id="Latitudine" value="">
+			<input type="text" name="Lo" placeholder="Longitudine" id="Longitudine" value="">
+		 </div>
+		 <!-- <form>
+			<input type="text"  class="giu"rows="4" id="Nazione" cols="30" name="Nazione"  value="">
+			<input type="text"  class="giu"rows="4" id="Temperatura" cols="30" name="Temperatura"  value="">
+			<input type="text"  rows="4" cols="30" id="Temp_max" name="Massima" placeholder="Massima" value="">
+			<input type="text" rows="4" cols="30" id="Temp_min" name="Minima" placeholder="Minima" value="">
+			<input type="text" rows="4" cols="30" id="wind" name="Vento" placeholder="Vento" value="">
+			<input type="text"  rows="4" cols="30" id="rain" name="Pioggia" placeholder="Pioggia"value="">
+			<input type="text" rows="4" cols="30" id="humidity" name="Umidit&agrave" placeholder="Umidit&agrave" value="">
+			<input type="text" rows="4" cols="30" id="pressure" name="Pressione" placeholder="Pressione" value="">
+		</form> -->
+		<table id="vuota">
+			<tr>
+				<th>
+				</th>
+				<th>
+					Umidità
+				</th>
+				<th>
+					Temperatura massima
+				</th>
+				<th>
+					Temperatura minima
+				</th>
+				<th>
+					Pressione
+				</th>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+				<th>
+				Giorno 1<br>
+				Giorno 2<br>
+				Giorno 3<br>
+				Giorno 4<br>
+				Giorno 5<br>
+				</th>
+				<th>
+					<textarea rows="14 "type="text" id="humidity" readonly="true"></textarea>
+				</th>
+				<th >
+					<textarea type="text" id="Temp_max" readonly="true"></textarea>
+				</th>
+				<th>
+					<textarea type="text" id="Temp_min" readonly="true"></textarea>
+				</th>
+				<th>
+					<textarea type="text" id="pressure" readonly="true"></textarea>
+				</th>
+			</tr>
+		  </table>
+
+
+			</center>
+
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<html>
+<style>
+.chittare{
+
+width: 10%;
+
+}
+h1{
+
+position:absolute;
+margin-left:35%;
+font-family: "Century Gothic" , "arial";
+}
+
+.btn{
+
+margin-left:30%;
+
+}
+#home{
+
+
+z-index: 3;
+border:white solid 1px;
+color:white;
+background-color: black;
+text-decoration: none;
+padding:5px;
+margin-left:1210px;
+
+}
+#home:hover{
+
+z-index: 3;
+color:black;
+background-color: white;
+
+}
+
+
+#barra{
+
+margin-top: -15px;
+margin-left: 24%;
+position: fixed;
+
+z-index: 2;
+
+}
+
+#nero{
+
+background-color: black;
+padding:50px;
+position: fixed;
+width:100%;
+z-index: 1;
+margin-top:-100px;
+margin-left:-10px;
+}
+
+#contenuto{
+	z-index: 1;
+margin:0 auto;
+height: 100%;
+width: 85%;
+margin-top:100px;
+background-color: white;
+text-align: center;
+
+
+}
+
+#titolo{
+
+color:white;
+margin-left: 10px;
+
+}
+
+
+
+
+</style>
+<head>
+<title>console</title>
+</head>
+<body>
+<div id = "nero">
+<h1 id = "titolo">Console</h1>
+	<input type = "text" id = "barra" size = "100" placeholder="inserisci lo strumento da cercare">
+	<a id = "home" href = "home.html">home</a>
+</div>
+<div id = "contenuto">
+<p>
+<h1>Pioneer DDJ400</h1>
+</br>
+</br>
+<h1>1000$</h1>
+<img class = "chittare" src = "immagini\Pioneer ddj400.jpg"/>
+<input type = "button" class = "btn" value = "aggiungi" onclick = "carrello()"/>
+<input type = "button" class = "piu" value = "+" onclick = "piu(0)"/>
+<span class = "x">0</span>
+<input type = "button" class = "meno" value = "-" onclick = "meno(0)"/>
+</p>
+<p>
+<h1>Pioner DDJ-SX3</h1>
+</br>
+</br>
+<h1>3000$</h1>
+<img class = "chittare" src = "immagini\pioneer ddj-sx3.jpg"/>
+<input type = "button" class = "btn" value = "aggiungi" onclick = "carrello()"/>
+<input type = "button" class = "piu" value = "+" onclick = "piu(1)"/>
+<span class = "x">0</span>
+<input type = "button" class = "meno" value = "-" onclick = "meno(1)"/>
+</p>
+<p>
+<h1>Pioneer JRR</h1>
+</br>
+</br>
+<h1>400$</h1>
+<img class = "chittare" src = "immagini\pioneer jrr.jpg"/>
+<input type = "button" class = "btn" value = "aggiungi" onclick = "carrello()"/>
+<input type = "button" class = "piu" value = "+" onclick = "piu(2)"/>
+<span class = "x">0</span>
+<input type = "button" class = "meno" value = "-" onclick = "meno(2)"/>
+</p>
+<p>
+<h1>Traktor</h1>
+</br>
+</br>
+<h1>900$</h1>
+<img class = "chittare" src = "immagini\traktor.jpg"/>
+<input type = "button" class = "btn" value = "aggiungi" onclick = "carrello()"/>
+<input type = "button" class = "piu" value = "+" onclick = "piu(3)"/>
+<span class = "x">0</span>
+<input type = "button" class = "meno" value = "-" onclick = "meno(3)"/>
+</p>
+</div>
+</body>
+<script>
+
+function carrello(){
+
+window.location.href = "carrello/carrello.html";
+
+}
+
+var q = new Array();
+
+q[0] = 0;
+q[1] = 0;
+q[2] = 0;
+q[3] = 0;
+q[4] = 0;
+q[5] = 0;
+q[6] = 0;
+q[7] = 0;
+q[8] = 0;
+
+
+function piu(pos)
+{
+
+q[pos]++;
+
+var x = document.getElementsByClassName("x")
+
+	x[pos].innerHTML = q[pos];
+
+
+}
+
+function meno(pos)
+{
+
+
+
+
+var x = document.getElementsByClassName("x")
+
+	x[pos].innerHTML = q[pos];
+
+
+
+if(q[pos] >= 1)
+{
+
+q[pos]--;
+
+}
+else{
+
+q[pos] = 0;
+
+}
+
+}
+
+
+</script>
+</html>

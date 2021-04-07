@@ -1,0 +1,112 @@
+<DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="stile.css">
+
+</head>
+<body>
+<p>Home</p>
+<center class="nero" >
+	<table>
+		<tr>
+			<td>
+				<h1>Carrello</h1>
+			</td>
+		</tr>
+	</table>
+</center>
+
+<div >
+	
+		<img src="nota.png" class="nota">
+		<a href="#" class="bordo">Dati del cliente</a> 
+		
+		<img src="nota.png" class="nota2">
+		<a href="metodo.html" class="bordo">Metodo di pagamento</a>
+		
+		<img src="nota.png" class="nota">
+		<a href="#">Verifica dell'ordine</a>
+	   
+</div>
+<center>
+<form>
+<p>Nome</p>
+<input type="text" value="" id = "nome">
+<p>Cognome</p>
+<input type="text" value="" id = "cognome">
+<p>Via</p>
+<input type="text" value="" id = "via">
+<p>Data di nascita</p>
+<input type="text" value="" id = "nato">
+<p>Civico</p>
+<input type="text" value="" id = "civico">
+<p>Email</p>
+<input type="email" value="" id = "email">
+<p>password</p>
+<input type="password" value="" id = "psw">
+<p>codice carta </p>
+<input type="password" value="" id = "car">
+<p>cvv </p>
+<input type="text" value="" id = "cvv">
+</center>
+</form>
+<input type="button" onclick = "dati()" value = "Avanti"/>
+
+<div>
+<footer>
+  <p>Posted by: Hege Refsnes</p>
+  <p>Contact information: <a href="mailto:someone@example.com">
+  someone@example.com</a>.</p>
+</footer>
+
+</div>
+</body>
+<script>
+
+
+function dati(){
+
+var nome = document.getElementById("nome");
+var cognome = document.getElementById("cognome");
+var via = document.getElementById("via");
+var nato = document.getElementById("nato");
+var civico = document.getElementById("civico");
+var email = document.getElementById("email");
+var psw = document.getElementById("psw");
+var car = document.getElementById("car");
+var cvv = document.getElementById("cvv");
+
+
+if(nome.value == "" || cognome.value == "" || via.value == "" || email.value == "" || psw.value == "" || car.value == "" || cvv.value == "" || civico.value == "")
+{
+
+alert("inserisci tutti i dati perpiacere");
+
+}
+else
+{
+
+if(psw.value == "ciao")
+{
+
+alert("registrazione effetuata con successo, buona giornata");
+window.location.href = "metodo.html";
+
+}
+else
+{
+
+alert("password errata prova nuovamente");
+
+}
+
+}
+
+}
+
+
+
+</script>
+</html>

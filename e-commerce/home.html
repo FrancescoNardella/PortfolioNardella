@@ -1,0 +1,316 @@
+<html>
+<style>
+
+
+#barra{
+
+margin-top: -15px;
+margin-left: 24%;
+position: fixed;
+
+z-index: 2;
+
+}
+
+.banner{
+
+position: absolute;
+
+width: 46%;
+margin-top:2%;
+border: solid black 1px;
+
+}
+
+#sx{
+
+position: absolute;
+
+margin-left:16%;
+margin-top:10%;
+
+
+}
+
+#dx{
+
+position:absolute;
+
+margin-left: 47%;
+margin-top: 10%;
+
+}
+
+#piano
+{
+
+visibility: hidden;
+
+}
+
+#archi
+{
+
+visibility: hidden;
+
+}
+
+#batteria
+{
+
+visibility: hidden;
+
+}
+
+#console{
+
+visibility: hidden;
+
+}
+
+#carrello{
+
+position:fixed;
+background-image: url(immagini\carrello logo.png);
+margin-left:1210px;
+z-index: 2;
+margin-top: -15px;
+}
+
+.strumenti{
+
+width:10%;
+margin-top:30%;
+
+}
+
+.strumenti:hover{
+
+width: 11%;
+
+}
+
+#riq{
+
+text-align: center;
+
+}
+
+#contenuto{
+
+
+	z-index: 1;
+margin:0 auto;
+height: 70%;
+width: 85%;
+margin-top: 50px;
+}
+
+body{
+	background-image: url("immagini/sfondo.jpg");
+}
+
+#riqban{
+
+margin-left: 22%;
+
+}
+
+#barra{
+
+margin-top: -15px;
+margin-left: 24%;
+position: fixed;
+
+z-index: 2;
+
+}
+
+#nero{
+
+background-color: black;
+padding:50px;
+position: fixed;
+width:100%;
+z-index: 1;
+margin-top:-100px;
+margin-left:-10px;
+}
+
+
+#titolo{
+
+color:white;
+margin-left: 10px;
+font-family: "Century Gothic" , "arial";
+
+}
+
+
+</style>
+<head>
+<title>strumenti musicali</title>
+</head>
+<body>
+
+
+	<center><h1>Music Sell</h1>
+	<input type = "text"  size = "70" placeholder="inserisci lo strumento da cercare">
+	<input type = "button"  value = "carrello" onclick = "carrello()"/></center>
+
+
+<div id = "contenuto">
+<div id = "riqban">
+<input type = "button" value = "-->" id = "dx" onclick = "destra()"/>
+<img class = "banner" id = "chitarre" src = "immagini\lespaul.jpg"/>
+<img class = "banner" id = "piano" src = "immagini\pianoforte 02.jpg"/>
+<img class = "banner" id = "archi" src = "immagini\violino 02.jpg"/>
+<img class = "banner" id = "batteria" src = "immagini\batteria 02.jpg"/>
+<img class = "banner" id = "console" src = "immagini\dj.jpg"/>
+</div>
+
+<input  type = "button" value = "<--" id = "sx" onclick = "sinistra()"/>
+<div id = "riq">
+<a href = "chitarra.html" ><img class = "strumenti" src = "immagini\chitarra.png"/></a>
+<a href = "batteria.html"><img class = "strumenti" src = "immagini\batteria.png"/></a>
+<a href = "basso.html"><img class = "strumenti" src = "immagini\basso.png"/></a>
+<a href = "console.html"><img class = "strumenti" src = "immagini\console.png"/></a>
+<a href = "microfono.html"><img class = "strumenti" src = "immagini\microfono.png"/></a>
+<a href = "pianoforte.html"><img class = "strumenti" src = "immagini\pianoforte.png"/></a>
+<a href = "violino.html"><img class = "strumenti" src = "immagini\violino.png"/></a>
+</div>
+</div>
+</body>
+
+<script>
+
+var c = 3;
+
+function sinistra()
+{
+
+
+
+var img1 = document.getElementById("archi");
+var img2 = document.getElementById("piano");
+var img3 = document.getElementById("chitarre");
+var img4 = document.getElementById("batteria");
+var img5 = document.getElementById("console");
+
+c++;
+
+
+
+if(c == 1)
+{
+
+img1.style.visibility = "hidden";
+img2.style.visibility = "visible";
+
+
+}
+
+if(c == 2)
+{
+
+img2.style.visibility = "hidden";
+img3.style.visibility = "visible";
+
+
+}
+
+
+if(c == 3)
+{
+
+img3.style.visibility = "hidden";
+img4.style.visibility = "visible";
+
+
+}
+
+if(c == 4)
+{
+
+img4.style.visibility = "hidden";
+img5.style.visibility = "visible";
+
+
+}
+
+
+if(c > 4)
+{
+
+c = 4;
+
+}
+
+
+}
+
+
+
+function destra()
+{
+
+
+
+var img1 = document.getElementById("archi");
+var img2 = document.getElementById("piano");
+var img3 = document.getElementById("chitarre");
+var img4 = document.getElementById("batteria");
+var img5 = document.getElementById("console");
+
+c--;
+
+
+if(c == 0)
+{
+
+img1.style.visibility = "visible";
+img2.style.visibility = "hidden";
+
+}
+
+if(c == 1)
+{
+
+img2.style.visibility = "visible";
+img3.style.visibility = "hidden";
+
+}
+
+if(c == 2)
+{
+
+img3.style.visibility = "visible";
+img4.style.visibility = "hidden";
+
+}
+
+if(c == 3)
+{
+
+img4.style.visibility = "visible";
+img5.style.visibility = "hidden";
+
+}
+
+if(c < 0)
+{
+
+c = 0;
+
+}
+
+}
+
+function carrello(){
+
+window.location.href = "carrello/carrello.html";
+
+}
+
+</script>
+</html>

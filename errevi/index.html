@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/stile4.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LiveWether</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/Style.css">
+ <script type="text/javascript" src="jss/IndexCode2.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<style>
+	*{font-size: 20px}
+	body{background-image: url("sas.png"); background-repeat: no-repeat; background-size: cover}
+	div{text-align: center}
+	label{text-align: center;}
+	div#margin-top{margin-top: 20px}
+	div#buttonup{margin-top: 40px}
+	th{border: 1pt solid black; width: 60px; heght: 50px; background-color: white}
+	th#vuota{border: 0pt solid black; background-color: rgb(128, 212, 255)}
+	td{border: 1pt solid black; background-color: white}
+	h1{font-size: 30px}
+	select{display: block;
+    width: 100%;
+    height: 50px;
+    padding: .375rem .75rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;}
+	textarea{height: 150px; width: 100%; font-size: 20px; text-align: center; overflow: hidden}
+	input.form-control{height: 50px; font-size: 15px; text-align: center; }
+	button{width: 90px; height: 50px; font-size: 15px;}
+	table{width: 90%; margin: 10px auto}
+</style>
+</head>
+<body>
+
+<div id="container">
+<center>
+<h1 style="margin-top: 40px;">Meteo città<h1>
+</center>
+<form style="margin: 0 150px; margin-top: 50px;">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label  for="text">Nome città</label>
+      <input type="text" class="form-control" placeholder="Nome città" id="citta" >
+    </div>
+    <div class="form-group col-md-6">
+      <label for="text">Unità di misura</label>
+      <select id="temperatura" class="ciao">
+		<option value="metric">Unità di misura(Metric)</option>
+		<option value="imperial">Unità di misura(Imperial)</option>
+	  </select>
+    </div>
+  </div>
+  <button type="button" onclick="jsonCall()" class="btn btn-primary"><h1>Invia</h1></button>
+  <div class="form-group" id="buttonup">
+    <label for="inputAddress">Città</label>
+    <input type="text" class="form-control" id="visuacitta" readonly="true" >
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Nazione</label>
+    <input type="text" class="form-control" id="nazione" readonly="true">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Latitudine</label>
+    <input  type="text" class="form-control" id="lat" readonly="true">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Longitudine</label>
+    <input type="text" class="form-control" id="long" readonly="true">
+  </div>
+
+  <center>
+  <div class="form-group" id="margin-top">
+    <label for="inputAddress2">Previsioni meteo</label>
+  </div>
+  </center>
+</form>
+<table>
+	<tr>
+		<th id="vuota">
+		</th>
+		<th>
+			Umidità
+		</th>
+		<th>
+			Temperatura massima
+		</th>
+		<th>
+			Temperatura minima
+		</th>
+		<th>
+			Pressione
+		</th>
+		<th>
+			Dettaglio Clima
+		</th>
+	</tr>
+	<tr>
+	</tr>
+	<tr>
+		<th>
+			Giorno 1
+		</th>
+		<th>
+			<textarea type="text" id="visuaumi" readonly="true"></textarea>
+		</th>
+		<th rowspan="5">
+			<textarea type="text" id="visuatmax" readonly="true"></textarea>
+		</th>
+		<th rowspan="5">
+			<textarea type="text" id="visuatmin" readonly="true"></textarea>
+		</th>
+		<th rowspan="5">
+			<textarea type="text" id="visuaclima" readonly="true"></textarea>
+		</th>
+		<th rowspan="5">
+			<textarea type="text" id="visuadclima" readonly="true"></textarea>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			Giorno 2
+		</th>
+
+	</tr>
+	<tr>
+		<th>
+			Giorno 3
+		</th>
+	</tr>
+	<tr>
+		<th>
+			Giorno 4
+		</th>
+	</tr>
+	<tr>
+		<th>
+			Giorno 5
+		</th>
+	</tr>
+  </table>
+</div>
+</body>
+<div>
+</html>
